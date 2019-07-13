@@ -33,6 +33,26 @@ $("#example").ionRangeSlider({
 });
 
 $("#example_id").ionRangeSlider();
+
+slider.update({
+  from: 300,
+  to: 400
+});
+
+slider.reset();
+slider.destroy();
+
+$("#range").ionRangeSlider({
+  type:"double",
+  min: 0,
+  max: 1000,
+  from: 200,
+  to: 500,
+  grid: true
+});
+
+var slider = $("#range").data("ionRangeSlider");
+slider.reset();
 ```
 
 ```
@@ -54,7 +74,7 @@ Obj: {
 }
 ```
 
-```
+```html
 <input type="text" id="example_id" name="example_name" value="" />
 ```
 
